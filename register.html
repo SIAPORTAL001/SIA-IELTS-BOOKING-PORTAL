@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register | SIA IELTS Portal</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+.form-box{
+  background: rgba(0,0,0,0.55);
+  padding:30px;
+  width:320px;
+  border-radius:12px;
+  text-align:center;
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:6px;
+}
+
+button{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  background:#1e90ff;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#0b5ed7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+  <h2>Candidate Registration</h2>
+
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email Address">
+  <input type="text" placeholder="Phone Number">
+  <input type="text" placeholder="Passport / CNIC">
+
+  <button onclick="goNext()">Register</button>
+</div>
+
+<script>
+function goNext(){
+  window.location.href = "book.html";
+}
+</script>
+
+</body>
+</html>
