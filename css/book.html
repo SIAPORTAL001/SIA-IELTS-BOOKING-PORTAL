@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="css/style.css">
+
+<div class="container fade">
+  <h2>Book IELTS Test</h2>
+
+  <select id="test" onchange="showDate()">
+    <option>Select Test Type</option>
+    <option>IELTS Academic</option>
+    <option>IELTS General Training</option>
+    <option>IELTS Life Skills</option>
+  </select>
+
+  <div id="dateDiv" style="display:none;">
+    <input type="date" id="date" onchange="showTime()">
+  </div>
+
+  <div id="timeDiv" style="display:none;">
+    <input type="time" id="time">
+    <button class="btn btn-primary" onclick="book()">Book Now</button>
+  </div>
+</div>
+
+<script type="module" src="js/booking.js"></script>
